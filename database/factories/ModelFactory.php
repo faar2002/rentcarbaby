@@ -22,3 +22,13 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'active' => $faker->boolean,
     ];
 });
+
+$factory->define(App\Client::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name,
+        'rut' => $faker->unique()->paragraph,
+        'email' => $faker->safeEmail,
+        'address' => $faker->address,
+        'phone' => $faker->phoneNumber,
+    ];
+});
