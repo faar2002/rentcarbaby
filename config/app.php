@@ -52,7 +52,8 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
+    //'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -192,6 +193,9 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'Access'    => App\AccessHandler::class,
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade',
 
     ],
 
